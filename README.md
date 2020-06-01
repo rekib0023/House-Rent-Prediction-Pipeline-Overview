@@ -39,9 +39,11 @@ max 	|2.768307e+09 	|8.388607e+06 |	1100.000000 |	75.000000 |	102.036000 |	172.6
 
 #### Target Variable
 The target variable, here price was highly skewed towards the left side with skewness of 514.78 and kurtosis of 265062.43
+
 ![Target Distribution](/plots/target_distribution1.png)
 
 The skewness of the data points are resolved after log transformation. Log transformation gave us a skewness of 4.47 and kurtosis of 52.47
+
 ![Target Distribution](/plots/target_distribution2.png)
 
 #### Missing Values
@@ -68,10 +70,12 @@ description | drop records
 #### House Type
 Percentage description of the various house types in our dataset
 ![House Type](/plots/house_type.png)
+
 As we can see apartment acquires around 50% of our dataset, followed by house(7.07%) and flat(5.87%)
 
 #### Correlation
 ![Correlation](/plots/correlation.png)
+
 As we can see, there is no strong correlation among the independent variables with the dependent variables. Therefore, a linear model will perform terribly in this dataset.
 
 ## References
