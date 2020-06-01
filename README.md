@@ -1,4 +1,9 @@
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/) [![ForTheBadge uses-git](http://ForTheBadge.com/images/badges/uses-git.svg)](https://GitHub.com/) [![ForTheBadge built-with-love](http://ForTheBadge.com/images/badges/built-with-love.svg)](https://GitHub.com/rekib0023/)
+
+![Python Version](https://img.shields.io/pypi/pyversions/pip) [![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](http://ansicolortags.readthedocs.io/?badge=latest)
+
 # House-Rent-Prediction-Pipeline-Overview
+:house_with_garden::house_with_garden::house_with_garden::moneybag::moneybag::heart::heart:
 
 Notebook launched via Binder. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/rekib0023/House-Rent-Prediction-Pipeline-Overview/master)
 
@@ -106,3 +111,5 @@ The best prediction performance was achieved with a Random Forest regressor, usi
 - Towards Data Science blog: [Easy Steps To Plot Geographic Data on a Map — Python](https://towardsdatascience.com/easy-steps-to-plot-geographic-data-on-a-map-python-11217859a2db)
 - Plotly documentation: https://plotly.com/python/
 - Folium documentation: https://python-visualization.github.io/folium/quickstart.html
+
+![Forks](https://img.shields.io/github/forks/rekib0023/House-Rent-Prediction-Pipeline-Overview?style=social) ![Watchers](https://img.shields.io/github/watchers/rekib0023/House-Rent-Prediction-Pipeline-Overview?style=social)
