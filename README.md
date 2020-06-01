@@ -1,5 +1,8 @@
 # House-Rent-Prediction-Pipeline-Overview
 
+Notebook launched via Binder. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/rekib0023/House-Rent-Prediction-Pipeline-Overview/master)
+
+
 The project was an attempt to the iNeuron [ML Challenge 2](https://challenge-ineuron.in/mlchallenge.php#). The main objective of the project was to predict monthly house rent depending upon the various features.
 
 ## Table of Contents
@@ -7,6 +10,9 @@ The project was an attempt to the iNeuron [ML Challenge 2](https://challenge-ine
 - [Data Description](#data-description)
   - [Statistical Description](#statistical-description)
   - [Target Variable](#target-variable)
+  - [Missing Values](#missing-values)
+  - [House Type](#house-type)
+  - [Correlation](#correlation)
 
 ## Data Source
 The data set can be found in the iNeuron challenge. But for the convenience I have uploaded it to Google Drive. [Here](https://drive.google.com/drive/folders/16n1lch7y9iVNdetydfwW7pa2s2Z-AINT?usp=sharing) is the shared link.
@@ -34,10 +40,39 @@ max 	|2.768307e+09 	|8.388607e+06 |	1100.000000 |	75.000000 |	102.036000 |	172.6
 #### Target Variable
 The target variable, here price was highly skewed towards the left side with skewness of 514.78 and kurtosis of 265062.43
 ![Target Distribution](/plots/target_distribution1.png)
+
 The skewness of the data points are resolved after log transformation. Log transformation gave us a skewness of 4.47 and kurtosis of 52.47
 ![Target Distribution](/plots/target_distribution2.png)
 
-Notebook launched via Binder. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/rekib0023/House-Rent-Prediction-Pipeline-Overview/master)
+#### Missing Values
+The features containing missing values are:
+- parking_options (36%)
+- laundry_options (20%)
+- lat (0.5%)
+- long (0.5%)
+- description & state (nominal percentage)
+![Missing Values](/plots/missing_data.png)
+
+**Imputate missing values**
+Here's my take on imputing these missing values:
+
+variables | imputation 
+--- | ---
+parking_options | mode value of the parking_options for the respective house type
+laundry_options | mode value of the laundry_options for the respective house type
+lat | mode value of the lattitude for the respective house region
+long | mode value of the longitude for the respective house region
+state | drop records
+description | drop records
+
+#### House Type
+Percentage description of the various house types in our dataset
+![House Type](/plots/house_type.png)
+As we can see apartment acquires around 50% of our dataset, followed by house(7.07%) and flat(5.87%)
+
+#### Correlation
+![Correlation](/plots/correlation.png)
+As we can see, there is no strong correlation among the independent variables with the dependent variables. Therefore, a linear model will perform terribly in this dataset.
 
 ## References
 - [A Simple Tutorial To Data Visualization](https://www.kaggle.com/vanshjatana/a-simple-tutorial-to-data-visualization/data#Bar-Plot): Kaggle notebook by [Vansh Jatana](https://www.kaggle.com/vanshjatana)
