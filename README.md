@@ -5,10 +5,10 @@
 # House-Rent-Prediction-Pipeline-Overview
 :house_with_garden::house_with_garden::house_with_garden::moneybag::moneybag::heart::heart:
 
-Notebook launched via Binder. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/rekib0023/House-Rent-Prediction-Pipeline-Overview/master)
-
 
 The project was an attempt to the iNeuron [ML Challenge 2](https://challenge-ineuron.in/mlchallenge.php#). The main objective of the project was to predict monthly house rent depending upon the various features.
+
+Notebook launched via Binder. [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/rekib0023/House-Rent-Prediction-Pipeline-Overview/master)
 
 ## Table of Contents
 - [Data Source](#data-source)
