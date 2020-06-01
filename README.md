@@ -13,6 +13,8 @@ The project was an attempt to the iNeuron [ML Challenge 2](https://challenge-ine
   - [Missing Values](#missing-values)
   - [House Type](#house-type)
   - [Correlation](#correlation)
+- [Feature Engineering](#feature-engineering)
+- [Model Building](#model-building)
 
 ## Data Source
 The data set can be found in the iNeuron challenge. But for the convenience I have uploaded it to Google Drive. [Here](https://drive.google.com/drive/folders/16n1lch7y9iVNdetydfwW7pa2s2Z-AINT?usp=sharing) is the shared link.
@@ -77,6 +79,26 @@ As we can see apartment acquires around 50% of our dataset, followed by house(7.
 ![Correlation](/plots/correlation.png)
 
 As we can see, there is no strong correlation among the independent variables with the dependent variables. Therefore, a linear model will perform terribly in this dataset.
+
+## Feature Engineering
+While going through the description of few house records, I came across some interesting information as in houses having a pool, a gym nearby, a fireplace or a shopping mall nearby. I think this information will make a few good features. So I went ahead and made these new features.
+
+Also, as our data was not normally distribute. Performed log transformation on numerical data.
+
+And saved the cleaned dataset to a csv.
+
+## Model Building
+4 different learning regressors (Linear Regression, Random Forest, Gradient Boosting, and XgBoost) were tested, and we have achieved the best prediction performance using Random Forest, followed by Gradient Boosting, then XgBoost, while Linear Regression achieved the worst performance of the four.
+
+The best prediction performance was achieved with a Random Forest regressor, using all features in the dataset, and resulted in the following metrics:
+
+- Mean Absolute Error (MAE): 0.059128200788923446
+- Root mean squared error (RMSE): 0.1717131883398518
+- R-squared Score (R2_Score):  0.8746976791953469
+    
+![random_forest](/plots/random_forest.png)
+
+
 
 ## References
 - [A Simple Tutorial To Data Visualization](https://www.kaggle.com/vanshjatana/a-simple-tutorial-to-data-visualization/data#Bar-Plot): Kaggle notebook by [Vansh Jatana](https://www.kaggle.com/vanshjatana)
