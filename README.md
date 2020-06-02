@@ -111,5 +111,6 @@ The best prediction performance was achieved with a Random Forest regressor, usi
 - Towards Data Science blog: [Easy Steps To Plot Geographic Data on a Map — Python](https://towardsdatascience.com/easy-steps-to-plot-geographic-data-on-a-map-python-11217859a2db)
 - Plotly documentation: https://plotly.com/python/
 - Folium documentation: https://python-visualization.github.io/folium/quickstart.html
+- https://github.com/zeglam/Countries-GDP-prediction
 
 ![Forks](https://img.shields.io/github/forks/rekib0023/House-Rent-Prediction-Pipeline-Overview?style=social) ![Watchers](https://img.shields.io/github/watchers/rekib0023/House-Rent-Prediction-Pipeline-Overview?style=social)
