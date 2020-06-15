@@ -48,7 +48,7 @@ The target variable, here price was highly skewed towards the left side with ske
 
 ![Target Distribution](/plots/target_distribution1.png)
 
-The skewness of the data points are resolved after log transformation. Log transformation gave us a skewness of 4.47 and kurtosis of 52.47
+The skewness of the data points is resolved after log transformation. Log transformation gave us a skewness of 4.47 and kurtosis of 52.47
 
 ![Target Distribution](/plots/target_distribution2.png)
 
